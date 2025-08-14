@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* impede scroll lateral */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0f141b;
+  color: white;
+  line-height: 1.6;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* HEADER */
+header {
+  background-color: #0f141b;
+  padding: 10px;
+  border-top: 3px solid #00aeef;
+}
+
+.highlight {
+  color: #00aeef;
+}
+
+.logo,
+.highlight {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* TOPO */
+.topo {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  padding: 3%;
+  gap: 30px;
+  background-color: #0f141b;
+}
+
+.area-do-topo h1 {
+  font-size: 1rem;
+}
+
+.note-do-canto {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00aeef;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #008fc7;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+  background-color: #131a23;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* CONTATO E REDES SOCIAIS */
+.contato {
+  text-align: center;
+}
+
+.links-contato {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* quebra no mobile */
+  margin-top: 10px;
+}
+
+.links-contato a {
+  
+  color: white;
+  font-weight: bold;
+}
+
+.links-contato a:hover {
+  color: #b85cff;
+}
+
+.social {
+  background-color: #0f141b;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+
+.social a:hover {
+  color: #b85cff;
+}
+
+/* FOOTER */
+footer {
+  background-color: #131a23;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1020px) {
+  
+  .topo {
+    flex-direction: column-reverse;
+    font-size: 1rem;
+    gap: 1.5rem;
+  }
+  .note-do-canto {
+    height: 230px;
+    width: auto;
+    margin-top: 2rem;
+  }
+  .links-contato {
+    flex-direction: column;
+    align-items: center;
+  }
+}
